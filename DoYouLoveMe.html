@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyou</title>
+</head>
+<body style="position: relative">
+
+<h1 align="center"> Do You Love Me</h1>`
+<div align="center">
+               <input id="love" type="button" onclick="ClickYes()" value="Yes">
+               <input id = "khongyeu" type="button" onmouseover="nolove()" style="position: absolute; left: 750px;top: 77px" value="No">
+</div>
+<script>
+    function ClickYes() {
+        alert("<3")
+    }
+    function nolove() {
+        let trai = document.getElementById("khongyeu")
+        trai.style.left= parseInt(Math.random()*window.innerWidth) +"px"
+        trai.style.top= parseInt(Math.random()*500) + "px"
+    }
+</script>
+</body>
+</html>
